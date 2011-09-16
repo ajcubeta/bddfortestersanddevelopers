@@ -1,0 +1,18 @@
+#login
+  %h2 Candidates Sign up to Career Pacific
+
+  = form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
+    = devise_error_messages!
+    %fieldset
+      = f.label :email
+      = f.email_field :email, :placeholder => "Email", autofocus: true
+
+      = f.label :password
+      = f.password_field :password, :placeholder => "Password"
+
+      = f.label :password_confirmation
+      = f.password_field :password_confirmation, :placeholder => "Password Confirmation"
+
+    .action= f.submit "Sign up"
+
+#ifogot= render :partial => "devise/shared/links"

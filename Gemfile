@@ -21,6 +21,7 @@ gem 'jquery-rails'
 gem 'RedCloth'
 
 gem 'devise'
+gem "nifty-generators"
 
 gem 'postmark-rails'
 gem 'time_diff'
